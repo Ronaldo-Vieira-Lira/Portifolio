@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Fira Code', monospace;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background-color: #000000;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #A5AAA3;
+    border-radius: 5px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+a {
+    color: #fff;
+}
+a:hover {
+    text-decoration: none;
+    color: currentColor;
+}
+/* Fim de configurações gerais */
+
+/* Inicio Header */
+
+header {
+    background-color: #14161D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+header h2 {
+    font-weight: 700;
+}
+ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.itensMenu {
+    margin: 5px;
+}
+li a {
+    transition: 1s;
+    padding: 20px;
+    font-size: 15pt;
+    color: #fff;
+}
+li a:hover {
+    color: #7E57C2;
+    opacity: 1;
+}
+
+#menu {
+    background-color: rgba(0, 0, 0, 0);
+    transition: 1s;
+    display: none;
+}
+#navegacao.ativo {
+    display: block;
+    height: calc(100vh - 70px);
+    visibility: visible;
+}
+/* Fim Header */
+
+/* Area Chegada  */
+
+#containerChegada {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    padding: 10px;
+}
+#controleChegada {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+#caixaChegada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+}
+#caixaButtons {
+    display: flex;
+    justify-content: center;
+}
+#nome {
+    font-size: 2em;
+    font-weight: 600;
+}
+button {
+    color: white;
+    border: none;
+    border-radius: 3px; 
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+button:hover {
+    transform: scale(1.1);
+}
+#primeiroButton {
+    background-color: #22048C;
+    transition: 1.5s;
+    margin: 0 5px 0 5px;
+    padding: .6em;
+}
+#primeiroButton:hover {
+    background-color: #371b9c;
+}
+#segundoButton {
+    transition: 1.5s;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #371b9c;
+    margin: 0 5px 0 5px;
+    padding: .6em;
+}
+.svgImagem {
+    width: 450px;
+    height: 400px;
+}
+
+/* Fim chegada */
+
+/* Inicio Sobre Mim */
+
+#sobreMim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #202020;
+}
+#controleSobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#sobreMimText {
+    width: 50%;
+}
+#sobreMimText button {
+    margin-left: 3px;
+    padding: 10px;
+    background-color: #371b9c;
+    transition: 1s;
+}
+#secaoContatos {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.caixaItens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 150px;
+}
+.linkRedes, .linkRedes:hover {
+    color: #fff;
+}
+.contornoVetor {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+    text-align: center;
+}
+.caixaItens h5 {
+    margin: 5px 0 5px 0;
+}
+.caixaItens h6 {
+    color: #2B354F;
+}
+
+#containerSkill {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#caixaSkill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 30px;
+    cursor: pointer;
+}
+.caixaItens h6 {
+    margin-top: 20px;
+}
+#areaTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+}
+.transicao {
+    transition: 1s;
+}
+#skillTexts {
+    width: 500px;
+    height: 150px;
+    word-wrap: normal;
+    margin-top: 30px;
+}
+
+.contornoVetorSkill {
+    background-color: #202020;
+    padding: 20px 50px;
+    transition: all 0.8s ease 0s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
+    border-bottom: 6px solid #202020;
+    border-radius: 5px;
+}
+.contornoVetorSkill:hover {
+    transform: scale(1.2);
+    border-color:  #6610F2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.displayOff {
+    display: none;
+    padding: 8px 10px;
+    width: 150px;
+    background-color: #202020;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #371b9c; 
+    color: white !important;
+}
+/* Area de serviços a oferecidos */
+#servicos {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background-color: #202020;
+}
+#servicos h2 {
+    font-weight: 700;
+    width: fit-content;
+    margin: auto auto 100px auto;
+}
+#servicos h2::after, #sobreMimText h2::after {
+    content: "";
+    display: block;
+    background-color: #6610F2;
+    height: 2px;
+    margin-top: 3px;
+}
+#ofertaServicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+.oferecer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    gap: 20px;
+    background-color: #181818;
+    border: 5px solid rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    transition: 1s;
+}
+.oferecer:hover {
+    transition: 2s;
+    border-color: #6610F2;
+}
+.oferecer img {
+    margin: 20px 0;
+}
+
+/* Inicio area projetos */
+
+#projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+}
+#areaProjetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 70%;
+    
+}
+.contornoProjeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caixaImagem {
+    width: 320px;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #181818;
+}
+.caixaImagem img {
+    width: 100%;
+    height: 200px;
+    transition: all 0.8s ease 0s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
+}
+.caixaImagem img:hover {
+    transform: scale(1.1);
+}
+
+/* Contatos  */
+#contatos {
+    text-align: center;
+}
+#modalAlert {
+    cursor: pointer;
+}
+#modal {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    z-index: 9999999999999999999;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+    display: none;
+}
+#contModal {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+    margin-top: 50px;
+    color: #000;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+#btnModal {
+    width: 85%;
+    padding: 8px;
+    transition: .6s;
+    color: #FFF;
+    background-color: #000;
+}
+
+
+@media(max-width: 900px) {
+    /* Header */
+    header {
+        justify-content: space-between;
+        padding: 0 50px 0 50px;
+    }
+    #menu {
+        display: block;
+    }
+    #navegacao {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 50%;
+        background-color: #14161D;
+        z-index: 10;
+        transition: .6s;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    li {
+        padding: 10px ;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    }
+    /* Fim header */
+
+    /* Inicio chegada */
+    .svgImagem {
+        width: 400px;
+    }
+
+
+    /* Inicio Sobre Mim */
+
+    #sobreMim p {
+        text-align: justify;
+        margin: 20px;
+        width: auto;
+    }
+    #skillTexts {
+        width: auto;
+    }
+
+}
+
+
+@media(max-width: 768px) {
+    /* Inicio chegada  */
+    .svgImagem {
+        display: none;
+    }
+}
+
+
