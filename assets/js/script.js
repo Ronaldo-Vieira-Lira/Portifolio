@@ -3,7 +3,7 @@ function toggleMenu(event) {
     if(event.type === 'touchstart') event.preventDefault();
     let troca = document.getElementById("trocaIcon")
     let nave = document.getElementById("navegacao")
-    nave.classList.toggle("ativo") ? troca.src = "../assets/image/close.svg" : troca.src = "../assets/image/menu.svg" 
+    nave.classList.toggle("ativo") ? troca.src = "./assets/image/icons/close.svg" : troca.src = "./assets/image/icons/menu.svg" 
 }
 let butonMobile = document.getElementById("menu") 
 butonMobile.addEventListener("click", toggleMenu)
@@ -64,8 +64,10 @@ function displayOf() {
 
 /* Modal */
 document.getElementById("modalAlert").addEventListener("click", () => {
-    document.getElementById("modal").style.display = "block"
+    document.getElementById("modal").style.display = "flex"
 });
 document.getElementById("btnModal").addEventListener("click", () => {
     document.getElementById("modal").style.display = "none"
 });
+
+
