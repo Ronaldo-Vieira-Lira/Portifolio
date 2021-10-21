@@ -45,9 +45,6 @@ header {
     align-items: center;
     height: 70px;
 }
-header h2 {
-    font-weight: 700;
-}
 ul {
     margin: 0;
     display: flex;
@@ -87,7 +84,7 @@ li a:hover {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
-    height: 100vh;
+    height: 90vh;
     padding: 10px;
 }
 #controleChegada {
@@ -101,6 +98,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 50%;
     text-align: center;
 }
@@ -130,7 +128,7 @@ button {
 button:focus {
     outline: none;
 }
-button:hover {
+#caixaButtons button:hover {
     transform: scaleX(1.2);
 }
 #primeiroButton {
@@ -164,12 +162,12 @@ button:hover {
     justify-content: space-around;
     align-items: center;
 }
-h2 {
+.subTitulos {
     font-weight: 700;
     width: fit-content;
-    margin: auto auto 100px auto;
+    margin: auto auto 20px auto;
 }
-h2::after {
+.subTitulos::after {
     content: "";
     display: block;
     background-color: #6610F2;
@@ -221,8 +219,8 @@ h2::after {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    padding: 10px;
 }
-
 #caixaSkill {
     display: flex;
     justify-content: center;
@@ -273,6 +271,7 @@ h2::after {
     box-shadow: 0 0 5px #371b9c; 
     color: white !important;
 }
+
 /* Area de serviços a oferecidos */
 #servicos {
     text-align: center;
@@ -335,7 +334,7 @@ h2::after {
     align-items: center;
 }
 .caixaImagem {
-    width: 320px;
+    width: 300px;
     overflow: hidden;
     border-radius: 5px;
     padding: 3px;
@@ -396,7 +395,12 @@ h2::after {
     /* Header */
     header {
         justify-content: space-between;
-        padding: 0 50px 0 50px;
+        padding: 0 15px 0 15px;
+        line-height: 70px;
+    }
+    header h1 {
+        font-size: 1.5em;
+        margin: 0;
     }
     #menu {
         display: block;
@@ -418,11 +422,20 @@ h2::after {
         padding: 10px ;
         border-bottom: 2px solid rgba(0, 0, 0, 0.4);
     }
-    /* Fim header */
 
     /* Inicio chegada */
+    #caixaChegada {
+        width: 100%;
+    }
     .svgImagem {
         width: 400px;
+    }
+    #caixaButtons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #caixaButtons {
+        width: 80%;
     }
 
 
@@ -433,6 +446,9 @@ h2::after {
         margin: 20px;
         width: auto;
     }
+    #sobreMimText {
+        width: 100%;
+    }
     #skillTexts {
         width: auto;
     }
@@ -442,9 +458,27 @@ h2::after {
 
 @media(max-width: 768px) {
     /* Inicio chegada  */
+    #caixaChegada {
+        align-items: center;
+    }
     .svgImagem {
         display: none;
     }
+    /* Sobre mim */
+    #sobreMimText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sobreMimText button {
+        width: 95%;
+        transform: none;
+    }
 }
 
-
+@media(max-width: 320px) {
+    #sobreMim {
+        padding: 10px;
+    }
+}
