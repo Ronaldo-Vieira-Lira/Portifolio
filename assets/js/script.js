@@ -71,3 +71,24 @@ document.getElementById("btnModal").addEventListener("click", () => {
 });
 
 
+/* Contatos */
+
+function localiza(local) {
+    switch (local) {
+        case "zexer":
+            window.open("https://zexer.vercel.app", "_blank")
+            break
+        case "oldgym":
+            window.open("https://oldgym.vercel.app", "_blank")
+            break
+        case "github":
+            window.open("https://github.com/Ronaldo-Vieira-Lira", "_blank")
+            break
+        case "linkedin":
+            window.open("https://www.linkedin.com/in/ronaldo-vieira-lira/", "_blank")
+            break
+        case "email":
+            window.location = "mailto:ronaldo.vieiralira@gmail.com"
+            break
+    };
+};

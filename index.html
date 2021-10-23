@@ -33,7 +33,7 @@
                         <a href="#servicos">Servicos</a>
                     </li>
                     <li class="itensMenu">
-                        <a href="">Contatos</a>
+                        <a href="#contatos">Contatos</a>
                     </li>
                     
                 </ul>
@@ -215,48 +215,28 @@
         <section id="projetos"> <!--Projetos-->
             <h2 class="subTitulos">Projetos</h2>
 
-            <div id="areaProjetos"><!--Caixa controladora-->
-                <div class="contornoProjeto">
-                    <div class="caixaImagem">
+            <div id="areaProjetos"> <!--Caixa controladora-->
+                <div class="contornoProjeto" onclick="localiza('zexer')">
+                    <div class="caixaImagem" >
                         <img src="assets/image/projetos/zexer.png" alt="">
                     </div>
                     <h3>Zexer</h3>
                 </div>
-                <div class="contornoProjeto">
+                <div class="contornoProjeto" onclick="localiza('oldgym')">
                     <div class="caixaImagem">
                         <img src="assets/image/projetos/oldgym.png" alt="imagem">
                     </div>
                     <h3>Old Gym</h3>
                 </div>
-                <div class="contornoProjeto">
-                    <div class="caixaImagem">
-                        <img src="" alt="imagem">
-                    </div>
-                    <h3>Sem tema</h3>
-                </div>
-                <div class="contornoProjeto">
-                    <div class="caixaImagem">
-                        <img src="" alt="imagem">
-                    </div>
-                    <h3>Sem tema</h3>
-                </div>
-                <div class="contornoProjeto">
-                    <div class="caixaImagem">
-                        <img src="" alt="imagem">
-                    </div>
-                    <h3>Sem tema</h3>
-                </div>
-                <div class="contornoProjeto">
-                    <div class="caixaImagem">
-                        <img src="" alt="imagem">
-                    </div>
-                    <h3>Sem tema</h3>
-                </div>
             </div>
         </section>
 
         <section id="contatos">
-            <h2 class="subTitulos">Contatos <span><img src="assets/image/icons/alert-octagon.svg" alt="" id="modalAlert"></span></h2>
+            <div id="flex">
+                <h2 class="subTitulos">Contatos</h2>
+                <span><img src="assets/image/icons/alert-octagon.svg" alt="" id="modalAlert"></span>
+            </div>
+            
             <div id="modal">
                 <div id="contModal">
                     <p>
@@ -265,103 +245,72 @@
                     <button type="button" id="btnModal">Fechar</button>
                 </div>
             </div>
-            <section id="envioEmail">
-                <form action="post">
-                    <label for="nome">
-                        Nome
-                        <input type="text" name="nome" id="">
-                    </label>
-                    <label for="telefone">
-                        Telefone
-                        <input type="tel">
-                    </label>
-                    <label for="email">
-                        Email
-                        <input type="email" name="email" id="">
-                    </label>
-                    <label for="assunto">
-                        <textarea name="assunto" id="" cols="30" rows="10"></textarea>
-                    </label>
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
 
-            <section id="secaoContatos">
+            <section id="entreContato">
+
+                <div class="caixaItens" onclick="localiza('github')">
+
+                    <div class="contornoVetor"> <!--Vetor Github-->
+                        <img src="assets/image/icons/github.svg" alt="">
+                    </div>
+                    <h5>Github</h5>
+                    <h6>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2B354F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
+                        </span>
+                        Ronaldo-Vieira-Lira
+                    </h6>
+
+                </div>
+
+                <div class="caixaItens" onclick="localiza('linkedin')">
+                    
+                    <div class="contornoVetor"><!--Vetor Linkedin-->
+                        <img src="assets/image/icons/linkedin.svg" alt="">
+                    </div>
+                    <h5>Linkedin</h5>
+                    <h6>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2B354F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </span>
+                        Ronaldo Vieira    
+                    </h6>
+
+                </div>
                 
-                <a href="https://github.com/Ronaldo-Vieira-Lira" target="_blank" class="linkRedes">
+                <div class="caixaItens" onclick="localiza('email')">
 
-                    <div class="caixaItens">
-
-                        <div class="contornoVetor"> <!--Vetor Github-->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6610F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        </div>
-                        <h5>Github</h5>
-                        <h6>
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2B354F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
-                            </span>
-                            Ronaldo-Vieira-Lira
-                        </h6>
-
+                    <div class="contornoVetor"><!--Vetor Email-->
+                        <img src="assets/image/icons/email.svg" alt="">
                     </div>
-                </a>
+                    <h5>E-mail</h5>
 
-                <a href="https://www.linkedin.com/in/ronaldo-vieira-lira/" target="_blank" class="linkRedes">
+                    <h6>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2B354F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                        </span>
+                        ronaldo.vieiralira@...
+                    </h6>
 
-                    <div class="caixaItens">
-                        
-                        <div class="contornoVetor"><!--Vetor Linkedin-->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6610F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>  
-                        </div>
-                        <h5>Linkedin</h5>
-                        <h6>
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2B354F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                            </span>
-                            Ronaldo Vieira    
-                        </h6>
-
-                    </div>
-                </a>
-                
-                <a href="mailto:ronaldo.vieiralira@gmail.com" target="_blank" class="linkRedes">
-                    <div class="caixaItens">
-
-                        <div class="contornoVetor"><!--Vetor Email-->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6610F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        </div>
-                        <h5>E-mail</h5>
-
-                        <h6>
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2B354F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
-                            </span>
-                            ronaldo.vieiralira@...
-                        </h6>
-
-                    </div>
-                </a>
-
-                <a href="https://www.instagram.com/ronald_vieira18/" target="_blank" class="linkRedes">
-
-                    <div class="caixaItens">
-
-                        <div class="contornoVetor"><!--Vetor Instagram-->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6610F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                        </div>
-                        <h5>Instagram</h5>
-                        <h6>
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2B354F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
-                            </span>
-                            ronald_vieira18
-                        </h6>
-
-                    </div>
-                </a>
+                </div>
 
             </section>
         </section>
+        <footer>
+            <h6>
+                Orgulhosamente feito por Ronaldo Vieira 
+                <span>
+                    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/rjzlnunf.json"
+                        trigger="loop"
+                        stroke="90"
+                        colors="primary:#ffffff,secondary:#e8308c"
+                        style="width:32px;height:32px">
+                    </lord-icon>
+                </span>
+            </h6>
+        </footer>
         <script src="assets/dependentes/bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
