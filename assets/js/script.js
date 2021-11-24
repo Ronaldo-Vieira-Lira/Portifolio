@@ -12,39 +12,32 @@ butonMobile.addEventListener("touchstart", toggleMenu)
 
 // Functions para aparecer name
 
-var primeiraAreaTexto = document.getElementById("texto1")
-var segundaAreaText = document.getElementById("texto2")
-
-function displayOn(area){
+function displayOn(area) {
+    let primeiraAreaTexto = document.getElementById("texto1")
     switch(area) {
         case "html":
             document.getElementById("html").style.display = "block"
             primeiraAreaTexto.innerHTML = "HTML é uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir."
-            segundaAreaText.innerHTML = "3 meses de experiência"
             break
 
         case "css":
             document.getElementById("css").style.display = "block"
             primeiraAreaTexto.innerHTML = "CSS é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML."
-            segundaAreaText.innerHTML = "3 meses de experiência"
             break
 
         case "bootS":
             document.getElementById("bootS").style.display = "block"
             primeiraAreaTexto.innerHTML = "Bootstrap é um framework web para desenvolvimento de interface de sites e aplicações web usando HTML, CSS e JavaScript. Com a função de melhorar a experiência do usuário em um site amigável e responsivo."
-            segundaAreaText.innerHTML = "2 meses de experiência"
             break
 
         case "javaS":
             document.getElementById("javaS").style.display = "block"
             primeiraAreaTexto.innerHTML = "JavaScript é uma linguagem de programação interpretada estruturada de script, em alto nível com tipagem dinâmica fraca e multiparadigma."
-            segundaAreaText.innerHTML = "2 meses de experiência"
             break
 
         case "python":
             document.getElementById("python").style.display = "block"
             primeiraAreaTexto.innerHTML = "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte"
-            segundaAreaText.innerHTML = "5 meses de experiência"
             break
     }
 }
