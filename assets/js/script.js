@@ -11,9 +11,9 @@ butonMobile.addEventListener("touchstart", toggleMenu)
 
 
 // Functions para aparecer name
+var primeiraAreaTexto = document.getElementById("texto1")
 
 function displayOn(area) {
-    let primeiraAreaTexto = document.getElementById("texto1")
     switch(area) {
         case "html":
             document.getElementById("html").style.display = "block"
